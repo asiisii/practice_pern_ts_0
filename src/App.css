@@ -1,6 +1,23 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: fantasy;
-  background: linear-gradient(85deg, #7a7fba, #11c37c)
+	margin: 0;
+	padding: 0;
+	font-family: fantasy;
+	color: wheat;
+	/* https://projects.verou.me/css3patterns/ for below code */
+	background-color: rgb(124, 175, 196);
+	background-image: radial-gradient(
+			white,
+			rgba(255, 255, 255, 0.2) 2px,
+			transparent 40px
+		),
+		radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+		radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+		radial-gradient(
+			rgba(255, 255, 255, 0.4),
+			rgba(255, 255, 255, 0.1) 2px,
+			transparent 30px
+		);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
