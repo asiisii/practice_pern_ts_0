@@ -18,8 +18,8 @@ const Logo = () => {
 						src={scanner}
 						alt='scanner icon'
 						style={{
-							height: '150px',
-              width: '150px'
+							height: '90px',
+              width: '90px'
 						}}
 					/>
 				</div>
