@@ -1,0 +1,20 @@
+
+.imageLinkInput {
+	text-align: center;
+}
+
+.imageLinkInput__section {
+	display: flex;
+	justify-content: center;
+}
+
+.imageLinkInput__section__wrapper {
+	width: 70%;
+	background: rgb(106, 178, 219);
+	display: flex;
+	flex-direction: column;
+}
+
+.imageLinkInput__section__wrapper__btn {
+  align-self: center
+}

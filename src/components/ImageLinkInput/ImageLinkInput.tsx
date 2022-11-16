@@ -1,3 +1,5 @@
+import './ImageLinkInput.css'
+
 const ImageLinkInput = () => {
 	return (
 		<div className='imageLinkInput'>
