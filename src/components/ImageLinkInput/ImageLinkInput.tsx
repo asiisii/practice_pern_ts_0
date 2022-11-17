@@ -1,6 +1,12 @@
+import React from 'react'
 import './ImageLinkInput.css'
 
-const ImageLinkInput = () => {
+type ImageLinkInputProps = {
+	handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+	handleScan: (event: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+const ImageLinkInput = (props: ImageLinkInputProps) => {
 	return (
 		<div className='imageLinkInput'>
 			<p className='f2'>
@@ -12,8 +18,12 @@ const ImageLinkInput = () => {
 						className='f4 pa2 w-70 center'
 						type='text'
 						placeholder='Insert link here'
+						onChange={props.handleChange}
 					/>
-					<button className=' mt3 w-30 grow f4 link pv2 dib white bg-green  pointer imageLinkInput__section__wrapper__btn'>
+					<button
+						onClick={props.handleScan}
+						className=' mt3 w-30 grow f4 link pv2 dib white bg-green  pointer imageLinkInput__section__wrapper__btn'
+					>
 						Scan
 					</button>
 				</div>
